@@ -1,0 +1,13 @@
+# Site settings
+title: Idiot Savant
+motto: Who - me?
+email: paul@prajnainc.com
+description: > # this means to ignore newlines until "baseurl:"
+  In which an old Object-Oriented dog learns new Functional tricks...
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://prajnainc.com" # the base hostname & protocol for your site
+# twitter_username: jekyllrb
+github_username:  wizardpb
+
+# Build settings
+markdown: kramdown
