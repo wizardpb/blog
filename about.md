@@ -15,6 +15,3 @@ Agile is, so far, *the* most productive way of developing software, primarily be
 regularly checking and correcting the results of that communication. As much as I love building software, my focus these days is as an Agile coach and mentor.
 
 Feel free to contact me at <paul@prajnainc.com>
-
-
-

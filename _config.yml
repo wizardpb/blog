@@ -4,8 +4,8 @@ motto: Confessions of a recovering OO developer.
 email: paul@prajnainc.com
 description: > # this means to ignore newlines until "baseurl:"
   In which an old Object-Oriented dog learns new Functional tricks...
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://prajnainc.com" # the base hostname & protocol for your site
+baseurl: "/blog" # the subpath of your site, e.g. /blog/
+url: "http://prajnainc.com/" # the base hostname & protocol for your site
 twitter_username: mf_bennett
 github_username:  wizardpb
 linkedin_username: pauljbennett
