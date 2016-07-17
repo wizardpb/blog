@@ -5,7 +5,7 @@ date:   2016-07-16 18:00:00
 categories: Clojure programming
 ---
 I've programmed and built large systems in many different programming languages and systems. My graduate thesis was done 
-in C, building on the kernel of Unix Version 7 that came out of Bell Labs in the 1970's. When I cam to the US in the early 
+in C, building on the kernel of Unix Version 7 that came out of Bell Labs in the 1970's. When I came to the US in the early 
 80's, I worked at the Labs and used C++. In 1991 I took a project at Morgan Stanley, where I was the only C++ programmer
 on a project built in Smalltalk - and when I saw what Smalltalk could do, it blew my mind. I had been struggling with various C++
 IDE's that never really lived up to their promise, and when I saw VisualWorks Smalltalk - I never wanted to do anything else.
