@@ -11,7 +11,8 @@ I've gone through many languages and methodologies, from C/C++ through Smalltalk
 Let's just say I'm in recovery from a long period of OO addiction.
 
 My other obsession is Agile. More and more, I come to see software development as nothing more than a team effort in communication. 
-Agile is, so far, *the* most productive way of developing software, primarily because it enables high bandwidth, low error communication, with an baked-in mechanism for 
+Agile is, so far, *the* most productive way of developing software, primarily because it enables high bandwidth, low error communication, 
+with a baked-in mechanism for 
 regularly checking and correcting the results of that communication. As much as I love building software, my focus these days is as an Agile coach and mentor.
 
 Feel free to contact me at <paul@prajnainc.com>
