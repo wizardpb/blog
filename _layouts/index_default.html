@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+
+    <body>
+        {% include header.html %}
+        <br>
+        <div class="page-content">
+            <div class="sidebar">
+                <img width="200px" height="200px" src="{{ site.baseurl }}/images/CTO-1-small.jpeg">
+                <div class="sidebar-about">
+                    <p>Hey. My name is Paul Bennett. I'm an independent developer/architect/agile coach, fascinated by
+                    the process of developing software in teams.
+                    I've been a doing all of this for - let's say, a number of years. The number ? Well, my graduate project was done on a PDP 11/34 with
+                    256k of main memory, running Unix Version 6, so guess away :-)</p>
+                    <p>I've gone through many languages and methodologies, from C/C++ through Smalltalk, Ruby,
+                        Java,
+                        Groovy, and right now, I'm obsessed with Clojure.
+                        Let's just say I'm in recovery from a long period of OO addiction.</p>
+                    <p>My other obsession is Agile. More and more, I come to see software development as nothing more
+                        than a process of team communication.
+                    Agile is, so far, *the* most productive way of developing software, primarily because it enables high bandwidth, low error communication,
+                    with a baked-in mechanism for
+                    regularly checking and correcting the results of that communication. As much as I love building
+                        software, my focus these days is as an Agile coach and mentor.</p>
+
+                    Feel free to contact me at <paul@prajnainc.com>
+                </div>
+            </div>
+            <div class="wrapper">
+                {{ content }}
+            </div>
+        </div>
+
+        {% include footer.html %}
+
+    </body>
+
+</html>

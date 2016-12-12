@@ -63,22 +63,22 @@ While Java does support concurrent programming, it's model of threads, locks and
 very difficut to debug. Clojure goes much further, and leverages several features to make concurrent programming easier and less error prone.
 Firstly, it's immutable data structures allow data to be shared amoung threads with ease - since they are immutable, threads cannot
 intefere with other threads. Secondly, the difference between *value* and *identity* is clearly and explicitly defined. In an OO
-system, these are mixed - objects have an identity, and their state is mutated. With Clojure, identity is provided by explicit constructs
+system, these are mixed - objects have an identity, and their value is changed by mutating their state. There is no sense of an identity which is associated with different values through time. With Clojure, identity is provided by explicit constructs
 that can have their values changed *in an atomic manner*. It is this fact that makes concurrent programming in Clojure so much easier.
 
-Clojure provides several ways to atomically change the value of an identity. 
+There are several ways to do this. 
 
-*Atoms* allow synchronous and independent updates. The *swap!* function takes an atom and a function, calls the function with the current value, 
+*Atoms* allow *synchronous and independent* updates. The *swap!* function takes an atom and a function, calls the function with the current value, 
 and sets its value to the return value of that function. If the value is changed (by another thread) during the update, the operation
-is retired - swap! is essentially a test-and-set operation.
+is retried - swap! is essentially a test-and-set operation.
 
-*Refs* and a *software transactional memory* (STM) provide synchronous and coordinated changes. In this scheme, all updates are atomic, consistent and isolated, much as a 
+*Refs* and a *software transactional memory* (STM) provide *synchronous and coordinated* changes. In this scheme, all updates are atomic, consistent and isolated, much as a 
 database transaction would be. All updates and reads of a ref must be done in a _dosync_ function. All function calls inside a dosync see
 a stable state, with the whole transaction being retried when an update conflict is detected.
 
-*Agents* provide a message-based scheme allowing independent and asynchronous updates. Agents hold a single value, and are updated by 
+*Agents* provide a message-based scheme allowing *asynchronous and independent* updates. Agents hold a single value, and are updated by 
 sending a message to the agent. Messages are functions, and the agent system ensures that sometime in the future, the message function
-will be called with the current value of the agent and the state of the agent updated with the return value. Message execution is 
+will be called with the current value of the agent and the state updated with the return value. Message execution is 
 serialized by the agent system so that updates are applied serially.
 
 ## Multi-methods
